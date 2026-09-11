@@ -8,25 +8,28 @@
 </head>
 <body>
     <main>
-        <h1>Sorteador de numeros</h1>
-        <p>informe os limites inferior e superior</p>
+        <h1>Sorteador de números</h1>
+        <p>Informe os limites inferior e superior do sorteio</p>
         <label for="limiteinferior">Limite inferior</label>
         <input type="number" step="1" id="limiteInferior">
+        <br><br>
 
          <label for="limiteinferior">Limite Superior</label>
         <input type="number" step="1" id="limiteSuperior">
         <br><br>
 
-        <button onclick="sortearnumero()"</button>
-            <p id="resultado">O resultado aparecera aqui</p>
+        <button onclick="sortearNumero()">Sortear Um Número</button>
+
+            <p id="resultado">O resultado aparecera Aqui!</p>
             <script>
-                function sortear numero(){
-                    const textoInferior= document.getElementById ("limiteInferior").value;
-                    const textoSuperior= document.getElementById ("limiteSuperior").value;
+                function sortearNumero() {
+                    const textoInferior = document.getElementById ("limiteInferior").value;
+                    const textoSuperior = document.getElementById ("limiteSuperior").value;
 
                     const limiteInferior = NUmber(textoInferior);
                     const limiteSuperior = NUmber(textoSuperior);
-                    
+
+                    const numeroAleatorio = Math.random();
                 }
             </script>
     </main>
